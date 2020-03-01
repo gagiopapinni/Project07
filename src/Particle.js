@@ -49,7 +49,7 @@ class Particle {
             //   destination.ddy+=source.ddy;
 
                destination.m+=source.m;
-               source.m = 0;
+              // source.m = 0;
 
                destination.r = Math.pow(Math.pow(source.r,3)+Math.pow(destination.r,3),1/3)
               // destination.x = (this.x+p.x)/2
