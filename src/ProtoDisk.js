@@ -17,10 +17,12 @@ class ProtoDisk{
 
     init(){
 
-       for(let i = 0;i<500;i++){
-          let x = (this.W/2-this.r)+2*this.r*Math.random(),
-              y = (this.H/2-this.r)+2*this.r*Math.random();
-          this.particles.push( new Particle(this.canvas,x,y,1,this));
+       for(let i = 0;i<200;i++){
+          let r = Math.random()*(this.r-this.r*0.1)+this.r*0.1,
+              fi =  2*Math.PI*Math.random(),
+              x = r*Math.cos(fi),
+              y = r*Math.sin(fi);
+          this.particles.push( new Particle(this.canvas,this.center.x+x,this.center.y+y,1,this));
        }
 
     }
