@@ -37,7 +37,7 @@ class Particle {
            F.x += 1.5 * p.m*this.m/r * interaction_vector.norm().x;
            F.y +=  1.5 * p.m*this.m/r * interaction_vector.norm().y;
 
-           if(this.r+p.r>r){//to close, lets merge
+           if(this.r+p.r>r){//too close, lets merge
                let destination, source;
                if(p.m>this.m){ destination = p; source = this; }
                else{ destination = this; source = p; }
