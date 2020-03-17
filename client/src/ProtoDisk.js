@@ -20,7 +20,7 @@ class ProtoDisk {
 
     init() {
 
-        for (let i = 0; i < 5000; i++) {
+        for (let i = 0; i < 500; i++) {
             let r = Math.random() * (this.r - this.r * 0.1) + this.r * 0.1,
                 fi = 2 * Math.PI * Math.random(),
                 x = r * Math.cos(fi),
